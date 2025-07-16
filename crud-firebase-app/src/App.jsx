@@ -1,6 +1,6 @@
 import './App.css' 
 
-import { BrowserRouter, Routes, Route, Form } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Create from './components/Create'
 import Edit from './components/Edit'
 import Show from './components/Show'
@@ -11,7 +11,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Show/>}/>
           <Route path='/create' element={<Create/>}/>
-          <Route path='/edit:id' element={<Edit/>}/>
+          <Route path='/edit/:id' element={<Edit/>}/>
         </Routes>
       </BrowserRouter>
   )
